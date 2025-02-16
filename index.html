@@ -165,9 +165,21 @@
         color: #0071e3;
         font-weight: 500;
       }
+      /* "Learn More" link styling */
+      .learn-more {
+        margin-top: 1rem;
+        text-align: center;
+      }
+      .learn-more a {
+        text-decoration: none;
+        color: #0071e3;
+        font-weight: 500;
+      }
+      .learn-more a:hover {
+        text-decoration: underline;
+      }
 
       /* App Logo Styles */
-      /* This class controls the size and style of the hero section app logo */
       .app-logo {
         width: 150px;
         height: 150px;
@@ -175,7 +187,6 @@
         object-fit: cover;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-      /* Media query to increase logo size on desktop screens */
       @media (min-width: 992px) {
         .app-logo {
           width: 200px;
@@ -283,21 +294,27 @@
                   <h3>Interactive Lessons</h3>
                 </div>
                 <p>
-                  Engaging modules that simplify complex computing concepts. Our content is adapted from trusted resources like BBC Bitesize and aligns with the SQA course specifications, ensuring you study relevant material. Includes short videos and interactive elements to enhance understanding.
+                  Engaging modules that simplify complex computing concepts. Our content is adapted from trusted resources like BBC Bitesize and aligns with the SQA course specifications.
                 </p>
+                <div class="learn-more">
+                  <a href="interactive-lessons.html">Learn More</a>
+                </div>
               </div>
             </div>
             
-            <!-- Accessibility Features Card (centered on desktop using mx-auto) -->
-            <div class="col-md-6 mb-4 mx-auto">
+            <!-- Accessibility Features Card -->
+            <div class="col-md-6 mb-4">
               <div class="feature text-center">
                 <div class="feature-header">
                   <img src="images/accessibility.png" alt="Accessibility Features">
                   <h3>Accessibility Features</h3>
                 </div>
                 <p>
-                  Designed with inclusivity in mind, ThisalLearn supports various learning preferences and abilities. Features include dyslexia-friendly fonts, adjustable font sizes, contrast modes, and integration with Apple's VoiceOver and Switch Control for enhanced accessibility.
+                  Designed with inclusivity in mind, our app supports dyslexia-friendly fonts, adjustable font sizes, and integration with Apple's accessibility tools.
                 </p>
+                <div class="learn-more">
+                  <a href="accessibility-features.html">Learn More</a>
+                </div>
               </div>
             </div>
             
@@ -311,6 +328,9 @@
                 <p>
                   Submit exam answers and receive automated marking with detailed explanations, aligned with official schemes.
                 </p>
+                <div class="learn-more">
+                  <a href="auto-marking-system.html">Learn More</a>
+                </div>
               </div>
             </div>
             
@@ -324,6 +344,9 @@
                 <p>
                   Instant assessments and progress tracking with interactive quizzes to reinforce your understanding.
                 </p>
+                <div class="learn-more">
+                  <a href="real-time-feedback.html">Learn More</a>
+                </div>
               </div>
             </div>
             
@@ -337,6 +360,9 @@
                 <p>
                   Access all SQA exam PDFs, marking schemes, and assignments directly within the app for offline study.
                 </p>
+                <div class="learn-more">
+                  <a href="comprehensive-resources.html">Learn More</a>
+                </div>
               </div>
             </div>
             
@@ -348,13 +374,16 @@
                   <h3>Code Examples & Exercises</h3>
                 </div>
                 <p>
-                  Practice coding with interactive Python, HTML, CSS, and JavaScript snippets in a custom VS Code environment.
+                  Practice coding with interactive Python, HTML, CSS, JavaScript, and SQL examples in a custom VS Code environment.
                 </p>
+                <div class="learn-more">
+                  <a href="code-examples.html">Learn More</a>
+                </div>
               </div>
             </div>
             
-            <!-- Customizable Interface Feature Card (centered on desktop using mx-md-auto) -->
-            <div class="col-md-6 mb-4 mx-md-auto">
+            <!-- Customizable Interface Feature Card -->
+            <div class="col-md-6 mb-4">
               <div class="feature text-center">
                 <div class="feature-header">
                   <img src="images/paintbrush.pointed.fill.png" alt="Customizable Interface">
@@ -363,6 +392,9 @@
                 <p>
                   Personalize your study space with adjustable settings for text size, color schemes, and background styles.
                 </p>
+                <div class="learn-more">
+                  <a href="customizable-interface.html">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -419,16 +451,12 @@
               <p>
                 Access past SQA exam papers, assignments, and official marking schemes for effective preparation.
               </p>
-
-              <div class="text-center mt-4">
-                <a href="resorses.html" class="btn btn-primary">SQA Resources</a>
+              <div class="learn-more">
+                <a href="resorses.html">Learn More</a>
               </div>
-
             </div>
           </div>
         </div>
-        <!-- New button row -->
-        
       </div>
     </section>
     

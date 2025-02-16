@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ThisalLearn - Auto-Marking System</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Internal CSS Styles -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #1d1d1f;
+      margin: 0;
+      padding: 0;
+    }
+    /* Navigation Styles */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+    }
+    .navbar-brand {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+    .navbar-nav .nav-link {
+      color: #1d1d1f;
+      font-size: 1rem;
+      margin: 0 10px;
+    }
+    /* Feature Header */
+    .feature-header {
+      text-align: center;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+    .feature-header img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+      border-radius: 0.25rem;
+    }
+    .feature-header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 500;
+      color: #0071e3;
+    }
+    /* Feature Content */
+    .feature-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-size: 1.125rem;
+      color: #3c3c43;
+      line-height: 1.6;
+    }
+    .feature-content ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    .feature-content li {
+      margin-bottom: 0.5rem;
+    }
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.875rem;
+      color: #8e8e93;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+        ThisalLearn
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="interactive-lessons.html">Interactive Lessons</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessibility-features.html">Accessibility Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="auto-marking-system.html">Auto-Marking System</a></li>
+          <li class="nav-item"><a class="nav-link" href="real-time-feedback.html">Real-Time Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="code-examples.html">Code Examples &amp; Exercises</a></li>
+          <li class="nav-item"><a class="nav-link" href="customizable-interface.html">Customizable Interface</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Feature Header -->
+  <div class="feature-header">
+    <img src="images/OpenAILogo.jpg" alt="Auto-Marking System">
+    <h1>Auto-Marking System</h1>
+  </div>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <p>
+      Our application incorporates an AI-based auto-marking system designed to evaluate open-ended exam-style questions. This system leverages advanced models from OpenAI—most notably, ChatGPT-4 Turbo—to provide accurate, immediate, and personalized feedback on your responses.
+    </p>
+    <p>
+      <strong>What is OpenAI?</strong> OpenAI is an AI research lab that develops cutting-edge language models capable of understanding and generating human-like text. Their API enables our app to harness these capabilities for tasks such as content generation and automated grading. OpenAI is committed to strong privacy standards; you can review their <a href="https://openai.com/policies/privacy-policy" target="_blank">API Privacy Policy</a> for more information.
+    </p>
+    <p>
+      <strong>How the Auto-Marking System Works:</strong>
+    </p>
+    <ul>
+      <li>
+        <strong>Exam Question &amp; Answer Submission:</strong> You are presented with a specific past paper question and a text box to enter your answer.
+      </li>
+      <li>
+        <strong>Content Moderation:</strong> Upon submission, OpenAI's <a href="https://platform.openai.com/docs/guides/moderation" target="_blank">Content Moderation API</a> checks your response to ensure it meets appropriate standards.
+      </li>
+      <li>
+        <strong>Marking Process:</strong> Once your answer passes moderation, your response—along with the exam question, maximum mark, and detailed marking instructions (including sample answers and additional context)—is compiled into a system message.
+      </li>
+      <li>
+        <strong>Automated Evaluation:</strong> This system message instructs ChatGPT-4 Turbo to act as an automarker. It then evaluates your answer and responds with a mark out of the maximum possible, along with a detailed explanation.
+      </li>
+      <li>
+        <strong>Verification:</strong> You can review the marking scheme to verify the accuracy of the model's assessment.
+      </li>
+    </ul>
+    <p>
+      <strong>Why ChatGPT-4 Turbo?</strong> ChatGPT-4 Turbo is our model of choice for several compelling reasons:
+    </p>
+    <p>
+      Compared to previous models like GPT-3.5 Turbo, ChatGPT-4 Turbo delivers superior natural language understanding and nuanced reasoning. While the standard GPT-4 model is highly capable, ChatGPT-4 Turbo is optimized for cost-effectiveness and rapid token processing. Its high token speed ensures that you receive feedback almost instantaneously—an essential feature for a real-time, responsive assessment system.
+    </p>
+    <p>
+      Additionally, ChatGPT-4 Turbo balances accuracy with efficiency. It is less expensive to operate than the full GPT-4 model, making it ideal for continuous, high-volume use in an educational setting. Its inaxspecaty—its capability to understand and process complex queries swiftly—ensures that every response is delivered promptly, without compromising on detail or quality.
+    </p>
+    <p>
+      In summary, ChatGPT-4 Turbo’s advanced language comprehension, rapid processing speed, and cost-effectiveness make it the best choice for our auto-marking system, delivering fast, reliable, and insightful evaluations of your exam responses.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ThisalLearn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThisalLearn - Real-Time Feedback</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Internal CSS Styles -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #1d1d1f;
+      margin: 0;
+      padding: 0;
+    }
+    /* Navigation Styles */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+    }
+    .navbar-brand {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+    .navbar-nav .nav-link {
+      color: #1d1d1f;
+      font-size: 1rem;
+      margin: 0 10px;
+    }
+    /* Feature Header */
+    .feature-header {
+      text-align: center;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+    .feature-header img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+    .feature-header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 500;
+      color: #0071e3;
+    }
+    /* Feature Content */
+    .feature-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-size: 1.125rem;
+      color: #3c3c43;
+      line-height: 1.6;
+    }
+    .feature-content ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    .feature-content li {
+      margin-bottom: 0.5rem;
+    }
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.875rem;
+      color: #8e8e93;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+        ThisalLearn
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="interactive-lessons.html">Interactive Lessons</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessibility-features.html">Accessibility Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="auto-marking-system.html">Auto-Marking System</a></li>
+          <li class="nav-item"><a class="nav-link" href="real-time-feedback.html">Real-Time Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="code-examples.html">Code Examples</a></li>
+          <li class="nav-item"><a class="nav-link" href="customizable-interface.html">Customizable Interface</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Feature Header -->
+  <div class="feature-header">
+    <img src="images/clock.badge.exclamationmark.png" alt="Real-Time Feedback">
+    <h1>Real-Time Feedback</h1>
+  </div>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <p>
+      Quizzes present a series of multiple-choice questions hosted by the chosen avatar. Students receive immediate feedback on whether they answered correctly, followed by an animated transition to the next question.
+    </p>
+    <p>
+      After completing a quiz, the app visualizes your performance with a dynamic pie chart that details the percentage of correct answers. This visual summary is complemented by a set of color-coded mastery indicators: <strong>green</strong> signifies all questions answered correctly, <strong>yellow</strong> indicates that at least one answer was incorrect, and <strong>red</strong> shows that all responses were incorrect.
+    </p>
+    <p>
+      The familiar multiple-choice format, reminiscent of popular platforms like Kahoot, makes the quizzes both interactive and engaging. The real-time feedback is designed not only to reinforce learning immediately but also to help you identify areas that may require additional practice.
+    </p>
+    <p>
+      Moreover, the system’s instantaneous correction and clear explanations enable you to understand your mistakes as they happen. This ongoing, personalized feedback supports a targeted learning approach, guiding your study sessions and helping you focus on topics where improvement is needed.
+    </p>
+    <p>
+      <strong>Features of Real-Time Feedback:</strong>
+    </p>
+    <ul>
+      <li><strong>Instant Assessments:</strong> Immediate correction and explanation of answers.</li>
+      <li><strong>Progress Tracking:</strong> Visual summaries, including a pie chart and color-coded mastery levels, help monitor your improvement over time.</li>
+      <li><strong>Engaging Experience:</strong> Interactive quizzes with animated transitions and customizable avatars create an enjoyable learning environment.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ThisalLearn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

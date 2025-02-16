@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ThisalLearn - Interactive Lessons</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Internal CSS (matching the style of web.html) -->
+    <style>
+      /* Global Styles */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #fff;
+        color: #1d1d1f;
+        margin: 0;
+        padding: 0;
+      }
+      /* Navigation Styles */
+      .navbar {
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        padding: 1rem 2rem;
+      }
+      .navbar-brand {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-brand img {
+        max-width: 40px;
+        margin-right: 10px;
+      }
+      .navbar-nav .nav-link {
+        color: #1d1d1f;
+        font-size: 1rem;
+        margin: 0 10px;
+      }
+      /* Hero Section Styles */
+      .hero {
+        text-align: center;
+        padding: 6rem 1rem 0;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin: 1rem 0;
+        font-weight: 500;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 1rem auto;
+        color: #3c3c43;
+      }
+      /* Lesson Content Section */
+      #lesson-content {
+        padding: 4rem 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      #lesson-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+      #lesson-content p {
+        font-size: 1.125rem;
+        color: #3c3c43;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      /* Footer Styles */
+      .footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        border-top: 1px solid #eaeaea;
+        font-size: 0.875rem;
+        color: #8e8e93;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+          ThisalLearn
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Navigation links remain consistent -->
+            <li class="nav-item"><a class="nav-link" href="interactive-lessons.html">Interactive Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="accessibility-features.html">Accessibility Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="auto-marking-system.html">Auto-Marking System</a></li>
+            <li class="nav-item"><a class="nav-link" href="real-time-feedback.html">Real-Time Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="code-examples.html">Code Examples</a></li>
+            <li class="nav-item"><a class="nav-link" href="customizable-interface.html">Customizable Interface</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section for Interactive Lessons -->
+    <div class="hero">
+      <div class="container">
+        <img src="images/book.closed.png" alt="Interactive Lessons" style="max-width: 150px;">
+        <h1>Interactive Lessons</h1>
+        <p>
+          Engaging modules that simplify complex computing concepts. Our content is adapted from trusted resources like BBC Bitesize and aligns with the SQA course specifications, ensuring you study relevant material. Includes short videos and interactive elements to enhance understanding.
+        </p>
+      </div>
+    </div>
+
+    <!-- Expanded Lesson Content Section (BBC Bitesize Focus) -->
+    <section id="lesson-content">
+      <div class="container">
+        <h2>BBC Bitesize Adaptation</h2>
+        <p>
+          Our interactive lessons are inspired by the trusted BBC Bitesize format. We’ve taken the proven structure of BBC Bitesize and enhanced it with updated explanations, additional context, and multimedia elements. This approach breaks down complex computing concepts into manageable, engaging segments tailored specifically to the SQA Higher Computing curriculum.
+        </p>
+        <p>
+          Each lesson is divided into clearly defined topic branches that lead to sub-sections—loosely based on the original BBC Bitesize layout. These sub-sections maintain core content for examination relevance while incorporating short videos, interactive quizzes, and dynamic code examples to reinforce understanding. This modular design ensures that the learning experience remains both accessible and continuously up-to-date.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 ThisalLearn. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
