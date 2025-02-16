@@ -6,7 +6,7 @@
     <title>ThisalLearn - Accessibility Features</title>
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Internal CSS Styles (consistent with web.html) -->
+    <!-- Internal CSS Styles -->
     <style>
       /* Global Styles */
       body {
@@ -37,23 +37,23 @@
         margin: 0 10px;
       }
       /* Feature Header */
-      .feature-header {
+      header.feature-header {
         text-align: center;
         padding: 3rem 1rem 1rem 1rem;
       }
-      .feature-header img {
+      header.feature-header img {
         width: 80px;
         height: 80px;
         margin-bottom: 1rem;
       }
-      .feature-header h1 {
+      header.feature-header h1 {
         font-size: 2.5rem;
         margin: 0;
         font-weight: 500;
         color: #0071e3;
       }
       /* Feature Content */
-      .feature-content {
+      main.feature-content {
         max-width: 800px;
         margin: 0 auto;
         padding: 2rem 1rem;
@@ -61,15 +61,15 @@
         color: #3c3c43;
         line-height: 1.6;
       }
-      .feature-content ul {
+      main.feature-content ul {
         margin: 1rem 0;
         padding-left: 1.5rem;
       }
-      .feature-content li {
+      main.feature-content li {
         margin-bottom: 0.5rem;
       }
       /* Footer Styles */
-      .footer {
+      footer.footer {
         text-align: center;
         padding: 2rem 1rem;
         border-top: 1px solid #eaeaea;
@@ -79,8 +79,8 @@
     </style>
   </head>
   <body>
-
-    <!-- Navigation Bar (same as previous pages) -->
+  
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -103,40 +103,44 @@
         </div>
       </div>
     </nav>
-
+    
     <!-- Feature Header -->
-    <div class="feature-header">
-      <img src="images/accessibility.png" alt="Accessibility Features">
-      <h1>Accessibility Features</h1>
-    </div>
-
+    <header class="feature-header">
+      <div class="container">
+        <img src="images/accessibility.png" alt="Accessibility Features">
+        <h1>Accessibility Features</h1>
+      </div>
+    </header>
+    
     <!-- Feature Content -->
-    <div class="feature-content">
-      <p>
-        Leveraging the powerful Apple ecosystem, our application is designed to provide you with an outstanding accessibility experience. With features built right into iOS, our app ensures that everyone can enjoy a seamless and inclusive learning journey.
-      </p>
-      <p>
-        For example, <strong>VoiceOver</strong> reads text aloud, helping you navigate content effortlessly, while <strong>Dynamic Type</strong> allows you to adjust text sizes to suit your visual needs. In addition, <strong>Switch Control</strong> offers alternative navigation options for those who prefer or require different interaction methods.
-      </p>
-      <p>
-        Our app also supports <strong>Closed Captions</strong> and <strong>Audio Descriptions</strong> to enhance your multimedia experience. Beyond these, the Apple ecosystem provides further tools such as <strong>AssistiveTouch</strong> for simplified gestures, a <strong>Magnifier</strong> to zoom in on details, and <strong>Guided Access</strong> to help you stay focused on your task.
-      </p>
-      <p>
-        These robust features work together to ensure that every student can access and benefit from our educational content. To learn more about these innovative accessibility tools, please visit Apple's 
-        <a href="https://www.apple.com/accessibility/" target="_blank">Accessibility</a> page.
-      </p>
-      <p>
-        This commitment to accessibility not only follows best practices in human-centered design but also guarantees that our learning environment is truly inclusive and effective for all.
-      </p>
-    </div>
-
+    <main class="feature-content">
+      <div class="container">
+        <p>
+          Leveraging the powerful Apple ecosystem, our application is designed to provide you with an outstanding accessibility experience. With features built right into iOS, our app ensures that everyone can enjoy a seamless and inclusive learning journey.
+        </p>
+        <p>
+          For example, <strong>VoiceOver</strong> reads text aloud, helping you navigate content effortlessly, while <strong>Dynamic Type</strong> allows you to adjust text sizes to suit your visual needs. In addition, <strong>Switch Control</strong> offers alternative navigation options for those who prefer or require different interaction methods.
+        </p>
+        <p>
+          Our app also supports <strong>Closed Captions</strong> and <strong>Audio Descriptions</strong> to enhance your multimedia experience. Beyond these, the Apple ecosystem provides further tools such as <strong>AssistiveTouch</strong> for simplified gestures, a <strong>Magnifier</strong> to zoom in on details, and <strong>Guided Access</strong> to help you stay focused on your task.
+        </p>
+        <p>
+          These robust features work together to ensure that every student can access and benefit from our educational content. To learn more about these innovative accessibility tools, please visit Apple's 
+          <a href="https://www.apple.com/accessibility/" target="_blank">Accessibility</a> page.
+        </p>
+        <p>
+          This commitment to accessibility not only follows best practices in human-centered design but also guarantees that our learning environment is truly inclusive and effective for all.
+        </p>
+      </div>
+    </main>
+    
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <p>&copy; 2025 ThisalLearn. All rights reserved.</p>
       </div>
     </footer>
-
+    
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>

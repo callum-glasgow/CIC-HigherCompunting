@@ -37,23 +37,23 @@
       margin: 0 10px;
     }
     /* Feature Header */
-    .feature-header {
+    header.feature-header {
       text-align: center;
       padding: 3rem 1rem 1rem 1rem;
     }
-    .feature-header img {
+    header.feature-header img {
       width: 80px;
       height: 80px;
       margin-bottom: 1rem;
     }
-    .feature-header h1 {
+    header.feature-header h1 {
       font-size: 2.5rem;
       margin: 0;
       font-weight: 500;
       color: #0071e3;
     }
     /* Feature Content */
-    .feature-content {
+    main.feature-content {
       max-width: 800px;
       margin: 0 auto;
       padding: 2rem 1rem;
@@ -61,7 +61,7 @@
       color: #3c3c43;
       line-height: 1.6;
     }
-    .feature-content p {
+    main.feature-content p {
       margin-bottom: 1rem;
     }
     /* Highlighting Offline Capability */
@@ -88,7 +88,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+        <img src="images/logo.jpeg" alt="ThisalLearn Logo" class="img-fluid">
         ThisalLearn
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -110,31 +110,35 @@
   </nav>
   
   <!-- Feature Header -->
-  <div class="feature-header">
-    <img src="images/text.document.png" alt="Comprehensive Resources">
-    <h1>Comprehensive Resources</h1>
-  </div>
+  <header class="feature-header">
+    <div class="container">
+      <img src="images/text.document.png" alt="Comprehensive Resources" class="img-fluid">
+      <h1>Comprehensive Resources</h1>
+    </div>
+  </header>
   
   <!-- Feature Content -->
-  <div class="feature-content">
-    <p>
-      ThisalLearn provides an extensive library of resources designed to support your revision for SQA Higher Computing. Our comprehensive resources include past exam papers, official marking schemes, assignments, and interactive revision materials—all curated to align with the current SQA curriculum.
-    </p>
-    <p>
-      Drawing on trusted sources and innovative design (as detailed in our project report), the app organizes content into modular sections that can be easily updated and expanded. All text content, quiz questions, and revision materials are stored in structured JSON files, enabling quick updates and ensuring consistency.
-    </p>
-    <div class="offline-note">
+  <main class="feature-content">
+    <div class="container">
       <p>
-        <strong>Offline Capability:</strong> One of the standout features of ThisalLearn is that it does not require constant Wi-Fi access. Nearly all essential resources are downloaded and stored locally when the app starts, ensuring you can study anytime—even when offline.
+        ThisalLearn provides an extensive library of resources designed to support your revision for SQA Higher Computing. Our comprehensive resources include past exam papers, official marking schemes, assignments, and interactive revision materials—all curated to align with the current SQA curriculum.
+      </p>
+      <p>
+        Drawing on trusted sources and innovative design (as detailed in our project report), the app organizes content into modular sections that can be easily updated and expanded. All text content, quiz questions, and revision materials are stored in structured JSON files, enabling quick updates and ensuring consistency.
+      </p>
+      <div class="offline-note">
+        <p>
+          <strong>Offline Capability:</strong> One of the standout features of ThisalLearn is that it does not require constant Wi-Fi access. Nearly all essential resources are downloaded and stored locally when the app starts, ensuring you can study anytime—even when offline.
+        </p>
+      </div>
+      <p>
+        Whether you're reviewing theory, practicing exam-style questions, or exploring interactive lessons, this app guarantees fast and responsive navigation. The offline fallback mechanism means that even if you lose internet connectivity, you can still access your study materials and continue learning uninterrupted.
+      </p>
+      <p>
+        With our comprehensive resources, you have everything you need to excel in your SQA Higher Computing exams—directly at your fingertips.
       </p>
     </div>
-    <p>
-      Whether you're reviewing theory, practicing exam-style questions, or exploring interactive lessons, this app guarantees fast and responsive navigation. The offline fallback mechanism means that even if you lose internet connectivity, you can still access your study materials and continue learning uninterrupted.
-    </p>
-    <p>
-      With our comprehensive resources, you have everything you need to excel in your SQA Higher Computing exams—directly at your fingertips.
-    </p>
-  </div>
+  </main>
   
   <!-- Footer -->
   <footer class="footer">

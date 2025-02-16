@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ThisalLearn - Code Examples & Exercises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThisalLearn - Code Examples &amp; Exercises</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Internal CSS Styles -->
@@ -36,23 +37,23 @@
       margin: 0 10px;
     }
     /* Feature Header */
-    .feature-header {
+    header.feature-header {
       text-align: center;
       padding: 3rem 1rem 1rem 1rem;
     }
-    .feature-header img {
+    header.feature-header img {
       width: 80px;
       height: 80px;
       margin-bottom: 1rem;
     }
-    .feature-header h1 {
+    header.feature-header h1 {
       font-size: 2.5rem;
       margin: 0;
       font-weight: 500;
       color: #0071e3;
     }
     /* Feature Content */
-    .feature-content {
+    main.feature-content {
       max-width: 800px;
       margin: 0 auto;
       padding: 2rem 1rem;
@@ -60,11 +61,11 @@
       color: #3c3c43;
       line-height: 1.6;
     }
-    .feature-content ul {
+    main.feature-content ul {
       margin: 1rem 0;
       padding-left: 1.5rem;
     }
-    .feature-content li {
+    main.feature-content li {
       margin-bottom: 0.5rem;
     }
     /* Code Snippet Styling */
@@ -92,7 +93,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+        <img src="images/logo.jpeg" alt="ThisalLearn Logo" class="img-fluid">
         ThisalLearn
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -114,36 +115,40 @@
   </nav>
 
   <!-- Feature Header -->
-  <div class="feature-header">
-    <img src="images/chevron.left.forwardslash.chevron.right.png" alt="Code Examples &amp; Exercises">
-    <h1>Code Examples &amp; Exercises</h1>
-  </div>
+  <header class="feature-header">
+    <div class="container">
+      <img src="images/chevron.left.forwardslash.chevron.right.png" alt="Code Examples &amp; Exercises" class="img-fluid">
+      <h1>Code Examples &amp; Exercises</h1>
+    </div>
+  </header>
 
   <!-- Feature Content -->
-  <div class="feature-content">
-    <p>
-      In the "Software Development" sections, our application presents interactive code examples to illustrate key programming concepts. Python is predominantly used because of its low entry barrier, extensive libraries, and versatility in areas like data visualization and machine learning.
-    </p>
-    <p>
-      These code snippets are fetched from a GitHub repository and displayed in an IDE-like format, providing a familiar and practical coding environment. While this enhanced view requires internet connectivity, an offline fallback view ensures that you can still access the code even when offline.
-    </p>
-    <p>
-      A convenient button in the top-right corner of the code view directs you to a VS Code Classroom environment, accessible via your browser. This feature allows you to run, experiment with, and debug code directly, making it easy to copy and further explore examples using your Microsoft account.
-    </p>
-    <p>
-      This interactive approach not only reinforces computational thinking by encouraging hands-on practice, but also supports iterative learning through trial and error. In addition to Python examples, our platform also provides code examples for web design using HTML, CSS, and JavaScript. Furthermore, there are SQL examples for database design, complete with expected output tables to guide you through practical database exercises.
-    </p>
-    <div class="code-snippet">
-      <pre><code># Example Python Code
+  <main class="feature-content">
+    <div class="container">
+      <p>
+        In the "Software Development" sections, our application presents interactive code examples to illustrate key programming concepts. Python is predominantly used because of its low entry barrier, extensive libraries, and versatility in areas like data visualization and machine learning.
+      </p>
+      <p>
+        These code snippets are fetched from a GitHub repository and displayed in an IDE-like format, providing a familiar and practical coding environment. While this enhanced view requires internet connectivity, an offline fallback view ensures that you can still access the code even when offline.
+      </p>
+      <p>
+        A convenient button in the top-right corner of the code view directs you to a VS Code Classroom environment, accessible via your browser. This feature allows you to run, experiment with, and debug code directly, making it easy to copy and further explore examples using your Microsoft account.
+      </p>
+      <p>
+        This interactive approach not only reinforces computational thinking by encouraging hands-on practice, but also supports iterative learning through trial and error. In addition to Python examples, our platform also provides code examples for web design using HTML, CSS, and JavaScript. Furthermore, there are SQL examples for database design, complete with expected output tables to guide you through practical database exercises.
+      </p>
+      <div class="code-snippet">
+        <pre><code># Example Python Code
 def greet(name):
     print(f"Hello, {name}!")
 
 greet("Student")</code></pre>
+      </div>
+      <p>
+        By loading these code examples from structured JSON files at startup, the app guarantees fast, responsive navigation and minimizes load times. This seamless integration of practical exercises reinforces your learning and prepares you for future academic or professional challenges.
+      </p>
     </div>
-    <p>
-      By loading these code examples from structured JSON files at startup, the app guarantees fast, responsive navigation and minimizes load times. This seamless integration of practical exercises reinforces your learning and prepares you for future academic or professional challenges.
-    </p>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

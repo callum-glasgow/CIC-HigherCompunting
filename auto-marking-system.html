@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ThisalLearn - Auto-Marking System</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,24 +37,24 @@
       margin: 0 10px;
     }
     /* Feature Header */
-    .feature-header {
+    header.feature-header {
       text-align: center;
       padding: 3rem 1rem 1rem 1rem;
     }
-    .feature-header img {
+    header.feature-header img {
       width: 80px;
       height: 80px;
       margin-bottom: 1rem;
       border-radius: 0.25rem;
     }
-    .feature-header h1 {
+    header.feature-header h1 {
       font-size: 2.5rem;
       margin: 0;
       font-weight: 500;
       color: #0071e3;
     }
     /* Feature Content */
-    .feature-content {
+    main.feature-content {
       max-width: 800px;
       margin: 0 auto;
       padding: 2rem 1rem;
@@ -61,11 +62,11 @@
       color: #3c3c43;
       line-height: 1.6;
     }
-    .feature-content ul {
+    main.feature-content ul {
       margin: 1rem 0;
       padding-left: 1.5rem;
     }
-    .feature-content li {
+    main.feature-content li {
       margin-bottom: 0.5rem;
     }
     /* Footer Styles */
@@ -84,7 +85,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+        <img src="images/logo.jpeg" alt="ThisalLearn Logo" class="img-fluid">
         ThisalLearn
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -105,52 +106,56 @@
   </nav>
 
   <!-- Feature Header -->
-  <div class="feature-header">
-    <img src="images/OpenAILogo.jpg" alt="Auto-Marking System">
-    <h1>Auto-Marking System</h1>
-  </div>
+  <header class="feature-header">
+    <div class="container">
+      <img src="images/OpenAILogo.jpg" alt="Auto-Marking System" class="img-fluid">
+      <h1>Auto-Marking System</h1>
+    </div>
+  </header>
 
   <!-- Feature Content -->
-  <div class="feature-content">
-    <p>
-      Our application incorporates an AI-based auto-marking system designed to evaluate open-ended exam-style questions. This system leverages advanced models from OpenAI—most notably, ChatGPT-4 Turbo—to provide accurate, immediate, and personalized feedback on your responses.
-    </p>
-    <p>
-      <strong>What is OpenAI?</strong> OpenAI is an AI research lab that develops cutting-edge language models capable of understanding and generating human-like text. Their API enables our app to harness these capabilities for tasks such as content generation and automated grading. OpenAI is committed to strong privacy standards; you can review their <a href="https://openai.com/policies/privacy-policy" target="_blank">API Privacy Policy</a> for more information.
-    </p>
-    <p>
-      <strong>How the Auto-Marking System Works:</strong>
-    </p>
-    <ul>
-      <li>
-        <strong>Exam Question &amp; Answer Submission:</strong> You are presented with a specific past paper question and a text box to enter your answer.
-      </li>
-      <li>
-        <strong>Content Moderation:</strong> Upon submission, OpenAI's <a href="https://platform.openai.com/docs/guides/moderation" target="_blank">Content Moderation API</a> checks your response to ensure it meets appropriate standards.
-      </li>
-      <li>
-        <strong>Marking Process:</strong> Once your answer passes moderation, your response—along with the exam question, maximum mark, and detailed marking instructions (including sample answers and additional context)—is compiled into a system message.
-      </li>
-      <li>
-        <strong>Automated Evaluation:</strong> This system message instructs ChatGPT-4 Turbo to act as an automarker. It then evaluates your answer and responds with a mark out of the maximum possible, along with a detailed explanation.
-      </li>
-      <li>
-        <strong>Verification:</strong> You can review the marking scheme to verify the accuracy of the model's assessment.
-      </li>
-    </ul>
-    <p>
-      <strong>Why ChatGPT-4 Turbo?</strong> ChatGPT-4 Turbo is our model of choice for several compelling reasons:
-    </p>
-    <p>
-      Compared to previous models like GPT-3.5 Turbo, ChatGPT-4 Turbo delivers superior natural language understanding and nuanced reasoning. While the standard GPT-4 model is highly capable, ChatGPT-4 Turbo is optimized for cost-effectiveness and rapid token processing. Its high token speed ensures that you receive feedback almost instantaneously—an essential feature for a real-time, responsive assessment system.
-    </p>
-    <p>
-      Additionally, ChatGPT-4 Turbo balances accuracy with efficiency. It is less expensive to operate than the full GPT-4 model, making it ideal for continuous, high-volume use in an educational setting. Its inaxspecaty—its capability to understand and process complex queries swiftly—ensures that every response is delivered promptly, without compromising on detail or quality.
-    </p>
-    <p>
-      In summary, ChatGPT-4 Turbo’s advanced language comprehension, rapid processing speed, and cost-effectiveness make it the best choice for our auto-marking system, delivering fast, reliable, and insightful evaluations of your exam responses.
-    </p>
-  </div>
+  <main class="feature-content">
+    <div class="container">
+      <p>
+        Our application incorporates an AI-based auto-marking system designed to evaluate open-ended exam-style questions. This system leverages advanced models from OpenAI—most notably, ChatGPT-4 Turbo—to provide accurate, immediate, and personalized feedback on your responses.
+      </p>
+      <p>
+        <strong>What is OpenAI?</strong> OpenAI is an AI research lab that develops cutting-edge language models capable of understanding and generating human-like text. Their API enables our app to harness these capabilities for tasks such as content generation and automated grading. OpenAI is committed to strong privacy standards; you can review their <a href="https://openai.com/policies/privacy-policy" target="_blank">API Privacy Policy</a> for more information.
+      </p>
+      <p>
+        <strong>How the Auto-Marking System Works:</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>Exam Question &amp; Answer Submission:</strong> You are presented with a specific past paper question and a text box to enter your answer.
+        </li>
+        <li>
+          <strong>Content Moderation:</strong> Upon submission, OpenAI's <a href="https://platform.openai.com/docs/guides/moderation" target="_blank">Content Moderation API</a> checks your response to ensure it meets appropriate standards.
+        </li>
+        <li>
+          <strong>Marking Process:</strong> Once your answer passes moderation, your response—along with the exam question, maximum mark, and detailed marking instructions (including sample answers and additional context)—is compiled into a system message.
+        </li>
+        <li>
+          <strong>Automated Evaluation:</strong> This system message instructs ChatGPT-4 Turbo to act as an automarker. It then evaluates your answer and responds with a mark out of the maximum possible, along with a detailed explanation.
+        </li>
+        <li>
+          <strong>Verification:</strong> You can review the marking scheme to verify the accuracy of the model's assessment.
+        </li>
+      </ul>
+      <p>
+        <strong>Why ChatGPT-4 Turbo?</strong> ChatGPT-4 Turbo is our model of choice for several compelling reasons:
+      </p>
+      <p>
+        Compared to previous models like GPT-3.5 Turbo, ChatGPT-4 Turbo delivers superior natural language understanding and nuanced reasoning. While the standard GPT-4 model is highly capable, ChatGPT-4 Turbo is optimized for cost-effectiveness and rapid token processing. Its high token speed ensures that you receive feedback almost instantaneously—an essential feature for a real-time, responsive assessment system.
+      </p>
+      <p>
+        Additionally, ChatGPT-4 Turbo balances accuracy with efficiency. It is less expensive to operate than the full GPT-4 model, making it ideal for continuous, high-volume use in an educational setting. Its inaxspecaty—its capability to understand and process complex queries swiftly—ensures that every response is delivered promptly, without compromising on detail or quality.
+      </p>
+      <p>
+        In summary, ChatGPT-4 Turbo’s advanced language comprehension, rapid processing speed, and cost-effectiveness make it the best choice for our auto-marking system, delivering fast, reliable, and insightful evaluations of your exam responses.
+      </p>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

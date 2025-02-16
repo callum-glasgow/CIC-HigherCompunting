@@ -37,33 +37,33 @@
         margin: 0 10px;
       }
       /* Hero Section Styles */
-      .hero {
+      header.hero {
         text-align: center;
         padding: 6rem 1rem 0;
       }
-      .hero h1 {
+      header.hero h1 {
         font-size: 3rem;
         margin: 1rem 0;
         font-weight: 500;
       }
-      .hero p {
+      header.hero p {
         font-size: 1.25rem;
         max-width: 600px;
         margin: 1rem auto;
         color: #3c3c43;
       }
       /* Lesson Content Section */
-      #lesson-content {
+      main#lesson-content {
         padding: 4rem 1rem;
         max-width: 1200px;
         margin: 0 auto;
       }
-      #lesson-content h2 {
+      main#lesson-content h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
         font-weight: 500;
       }
-      #lesson-content p {
+      main#lesson-content p {
         font-size: 1.125rem;
         color: #3c3c43;
         line-height: 1.6;
@@ -84,7 +84,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.jpeg" alt="ThisalLearn Logo">
+          <img src="images/logo.jpeg" alt="ThisalLearn Logo" class="img-fluid">
           ThisalLearn
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -106,18 +106,18 @@
     </nav>
 
     <!-- Hero Section for Interactive Lessons -->
-    <div class="hero">
+    <header class="hero">
       <div class="container">
-        <img src="images/book.closed.png" alt="Interactive Lessons" style="max-width: 150px;">
+        <img src="images/book.closed.png" alt="Interactive Lessons" class="img-fluid" style="max-width: 150px;">
         <h1>Interactive Lessons</h1>
         <p>
           Engaging modules that simplify complex computing concepts. Our content is adapted from trusted resources like BBC Bitesize and aligns with the SQA course specifications, ensuring you study relevant material. Includes short videos and interactive elements to enhance understanding.
         </p>
       </div>
-    </div>
+    </header>
 
     <!-- Expanded Lesson Content Section (BBC Bitesize Focus) -->
-    <section id="lesson-content">
+    <main id="lesson-content">
       <div class="container">
         <h2>BBC Bitesize Adaptation</h2>
         <p>
@@ -127,7 +127,7 @@
           Each lesson is divided into clearly defined topic branches that lead to sub-sections—loosely based on the original BBC Bitesize layout. These sub-sections maintain core content for examination relevance while incorporating short videos, interactive quizzes, and dynamic code examples to reinforce understanding. This modular design ensures that the learning experience remains both accessible and continuously up-to-date.
         </p>
       </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
