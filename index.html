@@ -511,18 +511,48 @@
       </div>
     </section>
     
-    <!-- Contact Section (Google Form Embed) -->
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <div class="text-center mb-5">
           <h2>Contact Us</h2>
+          <p class="lead">We'd love to hear from you. Send us a message and we'll get back to you shortly.</p>
         </div>
-        <div class="row">
-          <!-- Embed Google Form for contact -->
-          <div class="col-md-8 offset-md-2">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmtJNhXamcT8trrhsStIzdUrsuYj5YOutvkx-Uh_axKE1Wmg/viewform?usp=header" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
-              Loading…
-            </iframe>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+              <!-- Public Access Key from Web3Forms -->
+              <input type="hidden" name="access_key" value="afee1c08-2b55-4e3f-aa22-8829123c9e91">
+              
+              <!-- Name Field -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              </div>
+              
+              <!-- Email Field (Required) -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              
+              <!-- Subject Field -->
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+              </div>
+              
+              <!-- Message Field (Required) -->
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+              </div>
+              
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
